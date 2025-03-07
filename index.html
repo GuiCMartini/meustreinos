@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinos Minimalistas</title>
+  <!-- Google Fonts: Playfair Display para títulos e Inter para corpo -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip link para acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <noscript>Seu navegador não suporta JavaScript ou ele está desativado.</noscript>
+  <div class="container" id="main-content">
+    <header>
+      <h1>Meus Treinos</h1>
+      <!-- Exibe mês, dia e data -->
+      <div id="headerDateInfo"></div>
+      <!-- Barra de progresso mensal -->
+      <div id="monthlyProgressBarContainer">
+        <div id="monthlyProgressBar">
+          <span id="monthlyProgressText"></span>
+        </div>
+      </div>
+      <!-- Toggle manual para alternar entre modo escuro/claro -->
+      <div class="theme-toggle">
+        <label for="themeToggle">Modo Escuro:</label>
+        <input type="checkbox" id="themeToggle" aria-label="Alternar modo escuro/claro">
+      </div>
+    </header>
+
+    <!-- Seção dos Treinos -->
+    <div class="treinos-container">
+      <!-- Treino A -->
+      <div id="treinoA-section" class="treino-section">
+        <h2>Treino A</h2>
+        <ul id="treinoA">
+          <li>
+            <input type="checkbox" id="ex1" aria-checked="false">
+            <label for="ex1">Supino / Horizontal / Máquina</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex2" aria-checked="false">
+            <label for="ex2">Crucifixo / Máquina / Neutra</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex3" aria-checked="false">
+            <label for="ex3">Supino Inclinado</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex4" aria-checked="false">
+            <label for="ex4">Elevação Lateral</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex5" aria-checked="false">
+            <label for="ex5">Elevação Frontal</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex6" aria-checked="false">
+            <label for="ex6">Tríceps / Polia Alta / Corda</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex7" aria-checked="false">
+            <label for="ex7">Tríceps / Máquina</label>
+          </li>
+        </ul>
+        <p id="progressA">Progresso: <span id="progressoA">0</span> / <span id="totalA">7</span></p>
+      </div>
+
+      <!-- Treino B -->
+      <div id="treinoB-section" class="treino-section">
+        <h2>Treino B</h2>
+        <ul id="treinoB">
+          <li>
+            <input type="checkbox" id="ex8" aria-checked="false">
+            <label for="ex8">Puxada / Máquina / Pronada</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex9" aria-checked="false">
+            <label for="ex9">Puxada / Polia / Triângulo</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex10" aria-checked="false">
+            <label for="ex10">Remada Cavalinho / Barra Reta / Pronada</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex11" aria-checked="false">
+            <label for="ex11">Rosca Direta</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex12" aria-checked="false">
+            <label for="ex12">Rosca / Halteres / Neutra</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex13" aria-checked="false">
+            <label for="ex13">Rosca / Polia Baixa / Corda</label>
+          </li>
+        </ul>
+        <p id="progressB">Progresso: <span id="progressoB">0</span> / <span id="totalB">6</span></p>
+      </div>
+
+      <!-- Treino de Perna -->
+      <div id="treinoPerna-section" class="treino-section">
+        <h2>Treino de Perna</h2>
+        <ul id="treinoPerna">
+          <li>
+            <input type="checkbox" id="ex14" aria-checked="false">
+            <label for="ex14">Agachamento / Hack</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex15" aria-checked="false">
+            <label for="ex15">Leg Press / Horizontal</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex16" aria-checked="false">
+            <label for="ex16">Cad Abductora</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex17" aria-checked="false">
+            <label for="ex17">Cad Adutora</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex18" aria-checked="false">
+            <label for="ex18">Cad Flexora</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex19" aria-checked="false">
+            <label for="ex19">Mesa Flexora</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex20" aria-checked="false">
+            <label for="ex20">Cadeira Extensora</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex21" aria-checked="false">
+            <label for="ex21">Gêmeos / Máquina / Sentado</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ex22" aria-checked="false">
+            <label for="ex22">Prancha Ventral</label>
+          </li>
+        </ul>
+        <p id="progressPerna">Progresso: <span id="progressoPerna">0</span> / <span id="totalPerna">9</span></p>
+      </div>
+    </div>
+
+    <!-- Calendário Anual de 2025 -->
+    <div id="calendar-container"></div>
+    <!-- Legenda do Calendário -->
+    <div id="calendar-legend">
+      <p><span class="legend-box completed"></span> Verde: Treino concluído</p>
+    </div>
+
+    <footer>
+      <p class="version">v1.1</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
